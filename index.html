@@ -59,26 +59,26 @@
         };
     </script>
     <script>
-        var chargebeeTrackFunc=function(fprom) {
-            var tid = fprom.data.tid;
-            var chargebeeInstance;
-            try{
-               chargebeeInstance = Chargebee.getInstance(); 
-            }
-            catch(err){};
-            if (tid && chargebeeInstance){ 
-                var cart = chargebeeInstance.getCart();
-                cart.setCustomer({cf_tid:tid}); 
-             }else 
-            if (tid){
-              document.addEventListener("DOMContentLoaded",function(){chargebeeTrackFunc(fprom)});
-            }
-        };
-        if (window.$FPROM)
-        chargebeeTrackFunc($FPROM);
-        else{
-        _fprom=window.fprom||[];window._fprom=_fprom;_fprom.push(['_init',chargebeeTrackFunc]);
+    var chargebeeTrackFunc=function(fprom) {
+        var tid = fprom.data.tid;
+        var chargebeeInstance;
+        try{
+           chargebeeInstance = Chargebee.getInstance(); 
         }
+        catch(err){};
+        if (tid && chargebeeInstance){ 
+            var cart = chargebeeInstance.getCart();
+            cart.setCustomer({cf_tid:tid}); 
+         }else 
+        if (tid){
+          document.addEventListener("DOMContentLoaded",function(){chargebeeTrackFunc(fprom)});
+        }
+    };
+    if (window.$FPROM)
+    chargebeeTrackFunc($FPROM);
+    else{
+    _fprom=window.fprom||[];window._fprom=_fprom;_fprom.push(['_init',chargebeeTrackFunc]);
+    }
     </script>
     <script type="text/javascript">
  (function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://cdn.firstpromoter.com/fprom.js',t.onload=t.onreadystatechange=function(){var t=this.readyState;if(!t||"complete"==t||"loaded"==t)try{$FPROM.init("sqbpvx17",".nulecosmetics.com")}catch(t){}};var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)})();</script>
