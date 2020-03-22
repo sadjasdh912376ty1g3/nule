@@ -13,6 +13,18 @@
    Start of custom Webflow CSS
    ========================================================================== */
 
+.column {
+  float: left;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .coltext {
   float: left;
   width: 66%;
@@ -23,19 +35,6 @@
   float: left;
   width: 15%;
   padding: 5px;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 @media screen and (max-width: 500px) {
