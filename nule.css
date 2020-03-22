@@ -18,7 +18,7 @@
 .childinner {
   margin-left: 25px;
   /* Decorative .. */
-  background-color: #cccccc;
+  background-color: #ffffff;
   min-height: 40px;
 }
 .child:first-child .childinner {
