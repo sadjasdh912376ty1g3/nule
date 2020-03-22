@@ -23,6 +23,7 @@
 }
 .child:first-child .childinner {
   margin-left: 0;
+   background-color: #ffffff;
 }
 
 .w-layout-grid {
