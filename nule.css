@@ -12,6 +12,19 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+.child {
+  display: table-cell;
+}
+.childinner {
+  margin-left: 25px;
+  /* Decorative .. */
+  background-color: #cccccc;
+  min-height: 40px;
+}
+.child:first-child .childinner {
+  margin-left: 0;
+}
+
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
