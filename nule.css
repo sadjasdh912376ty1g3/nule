@@ -13,6 +13,7 @@
    Start of custom Webflow CSS
    ========================================================================== */
 
+
 /* Dropdown Button */
 .dropbtn {
   background-color: #ffacfc;
@@ -89,6 +90,9 @@
   }
   .coltext {
     width: 100%;
+  }
+  .policy {
+    font-size:4vw;
   }
 }
 .child {
